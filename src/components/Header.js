@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="header">
       <div className="container">
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Pacharadanai Srimueng</h1>
         <p>Discover my work and projects</p>
       </div>
     </header>
