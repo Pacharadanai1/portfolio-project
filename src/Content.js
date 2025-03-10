@@ -1,19 +1,24 @@
 export const content = {
   Contact: {
     title: "Contact Me",
-    subtitle: "I'd love to hear from you!",
+    subtitle: "",
     social_media: [
       {
-        icon: "faFacebook", // ใช้ไอคอนที่คุณต้องการ
-        link: "https://www.facebook.com",
+        icon: "faFacebook",
+        link: "https://www.facebook.com/mook.za.mak",
         text: "Facebook",
       },
       {
-        icon: "faInstagram", // ใช้ไอคอนที่คุณต้องการ
-        link: "https://www.instagram.com",
+        icon: "faInstagram",
+        link: "https://www.instagram.com/petch._.pp24/",
         text: "Instagram",
       },
-      // เพิ่ม social media อื่น ๆ ตามต้องการ
+      {
+        icon: "faPhone",
+        link: "tel:0657348347",
+        text: "065-734-8347",
+      },
+
     ],
   },
 };

@@ -6,10 +6,13 @@ function Header() {
     <header className="header">
       <div className="container">
         <h1>Pacharadanai Srimueng</h1>
-        <p>Discover my work and projects</p>
+        {/* <p>Discover my work and projects</p> */}
+        <a href="/CV/Resume.pdf" className="btn btn-primary" download>
+          Download Resume
+        </a>
       </div>
     </header>
   );
 }
 
-export default Header; 
+export default Header;

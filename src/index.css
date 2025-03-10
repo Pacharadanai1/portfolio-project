@@ -24,6 +24,10 @@ code {
   border-color: #4a5568;
 }
 
+.border-gray-500 {
+  border-color: #4a5568;
+}
+
 .btn {
   padding: 10px 20px;
   border-radius: 5px;
@@ -56,7 +60,11 @@ input::placeholder, textarea::placeholder {
 }
 
 .gap-5 {
-  gap: 1.25rem;
+  gap: 20px;
+}
+
+.gap-4 {
+  gap: 10px;
 }
 
 .md\:container {
@@ -65,13 +73,13 @@ input::placeholder, textarea::placeholder {
 }
 
 .px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 .md\:flex-row {
@@ -83,15 +91,48 @@ input::placeholder, textarea::placeholder {
 }
 
 .gap-10 {
-  gap: 2.5rem;
+  gap: 40px;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: bold;
 }
 
 .subtitle {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: normal;
+}
+
+.max-w-lg {
+  max-width: 512px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-2xl {
+  font-size: 24px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.mb-6 {
+  margin-bottom: 24px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.space-y-4 > * + * {
+  margin-top: 16px;
 }
