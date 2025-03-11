@@ -136,3 +136,11 @@ input::placeholder, textarea::placeholder {
 .space-y-4 > * + * {
   margin-top: 16px;
 }
+
+.skill-icon {
+  transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+}

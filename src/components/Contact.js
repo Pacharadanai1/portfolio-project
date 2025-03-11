@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { content } from "../Content";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
@@ -9,6 +9,7 @@ import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Contact = () => {
   const { Contact } = content;
   const form = useRef();
+  const [emailCounts, setEmailCounts] = useState({});
 
   const iconMap = {
     faFacebook: faFacebook,
@@ -19,6 +20,12 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    const email = form.current.user_email.value;
+
+    if (emailCounts[email] && emailCounts[email] >= 3) {
+      toast.error("you have reached the maximum number");
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -32,6 +39,11 @@ const Contact = () => {
           console.log(result.text);
           form.current.reset();
           toast.success("Email sent successfully");
+
+          setEmailCounts((prevCounts) => ({
+            ...prevCounts,
+            [email]: (prevCounts[email] || 0) + 1,
+          }));
         },
         (error) => {
           console.log(error.text);

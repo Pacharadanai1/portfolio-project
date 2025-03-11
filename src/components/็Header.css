@@ -1,0 +1,45 @@
+.header {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-content {
+  flex: 1;
+}
+
+.header-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.1);
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
