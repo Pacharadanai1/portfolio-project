@@ -1,34 +1,37 @@
 .header {
   background-color: #1a1a2e;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 20px 0;
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .header-content {
-  flex: 1;
+  margin-bottom: 20px;
 }
 
 .header-image {
-  flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .profile-image {
-  width: 150px;
+  width: 140px;
   height: 150px;
   border-radius: 50%;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .profile-image:hover {
   transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .btn {
