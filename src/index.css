@@ -37,6 +37,10 @@ code {
 input, textarea {
   background-color: #1a1a2e;
   color: white;
+  padding: 12px; 
+  border-radius: 8px; 
+  border: 1px solid #4a5568; 
+  width: 400px; 
 }
 
 input::placeholder, textarea::placeholder {
@@ -60,7 +64,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .gap-5 {
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .gap-4 {
@@ -143,4 +147,24 @@ input::placeholder, textarea::placeholder {
 
 .skill-icon:hover {
   transform: scale(1.2);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-3xl {
+  font-size: 2rem;
+}
+
+.hover\:text-gray-400:hover {
+  color: #a0aec0;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
 }

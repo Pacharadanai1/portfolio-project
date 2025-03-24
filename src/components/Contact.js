@@ -3,7 +3,7 @@ import { content } from "../Content";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
@@ -14,7 +14,7 @@ const Contact = () => {
   const iconMap = {
     faFacebook: faFacebook,
     faPhone: faPhone,
-    faInstagram: faInstagram,
+    faGithub: faGithub,
     faEnvelope: faEnvelope,
   };
 
@@ -23,7 +23,7 @@ const Contact = () => {
     const email = form.current.user_email.value;
 
     if (emailCounts[email] && emailCounts[email] >= 3) {
-      toast.error("you have reached the maximum number");
+      toast.error("You have reached the maximum number of messages allowed.");
       return;
     }
 
@@ -55,9 +55,9 @@ const Contact = () => {
   return (
     <section className="bg-dark_primary text-white py-14 px-5" id="contact">
       <Toaster />
-      <div className="md:container mx-auto flex flex-col md:flex-row items-center gap-10">
+      <div className="md:container mx-auto flex flex-col items-center gap-10">
         {/* Contact Form */}
-        <div className="flex-1 w-full max-w-lg">
+        <div className="flex-1 w-full max-w-lg text-center">
           <h2 className="text-2xl font-bold mb-2">{Contact.title}</h2>
           <h4 className="italic text-lg mb-6">{Contact.subtitle}</h4>
           <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
@@ -66,14 +66,14 @@ const Contact = () => {
               name="from_name"
               placeholder="Name"
               required
-              className="border border-gray-500 p-3 rounded bg-dark_primary text-white w-full"
+              className="border border-gray-500 p-2 rounded bg-dark_primary text-white w-full"
             />
             <input
               type="email"
               name="user_email"
               placeholder="Email Id"
               required
-              className="border border-gray-500 p-3 rounded bg-dark_primary text-white w-full"
+              className="border border-gray-500 p-2 rounded bg-dark_primary text-white w-full"
             />
             <textarea
               name="message"
@@ -81,23 +81,23 @@ const Contact = () => {
               required
               className="border border-gray-500 p-3 rounded bg-dark_primary text-white w-full h-32"
             ></textarea>
-            <button className="bg-white text-dark_primary font-bold py-2 px-4 rounded w-32">
+            <button className="bg-white text-dark_primary font-bold py-2 px-4 rounded w-32 mx-auto">
               Submit
             </button>
           </form>
         </div>
         {/* Contact Info */}
-        <div className="flex-1 w-full max-w-lg space-y-4">
+        <div className="flex gap-5">
           {Contact.social_media.map((content, i) => (
-            <div
+            <a
               key={i}
-              className="flex items-center gap-3"
+              href={content.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-3xl hover:text-gray-400"
             >
-              <FontAwesomeIcon icon={iconMap[content.icon]} className="text-xl" />
-              <a className="font-Poppins" href={content.link} target="_blank" rel="noopener noreferrer">
-                {content.text}
-              </a>
-            </div>
+              <FontAwesomeIcon icon={iconMap[content.icon]} />
+            </a>
           ))}
         </div>
       </div>

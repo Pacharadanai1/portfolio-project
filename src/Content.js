@@ -6,12 +6,12 @@ export const content = {
       {
         icon: "faFacebook",
         link: "https://www.facebook.com/mook.za.mak",
-        text: "Facebook",
+        text: "Pacharadanai Srimueng",
       },
       {
-        icon: "faInstagram",
-        link: "https://www.instagram.com/petch._.pp24/",
-        text: "Instagram",
+        icon: "faGithub",
+        link: "https://github.com/Pacharadanai1?tab=repositories",
+        text: "Pacharadanai1",
       },
       {
         icon: "faPhone",
