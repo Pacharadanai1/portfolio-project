@@ -1,11 +1,11 @@
-// filepath: c:\Select Work Portfolio\portfolio-project\src\components\Navbar.js
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#home">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-navbar">
+      <a className="navbar-brand" href="#header">
         Pacharadanai
       </a>
       <button
@@ -20,9 +20,9 @@ function Navbar() {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
+        <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a className="nav-link" href="#home">
+            <a className="nav-link" href="#header">
               Home
             </a>
           </li>

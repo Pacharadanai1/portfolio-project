@@ -7,7 +7,7 @@ function About() {
       <div className="container">
         <h2>About Me</h2>
         <p>
-          I am a Electronic Computer student with a passion for programming and technology. 
+          Hi Everyone, I am Pacharadanai Srimueng. I am a Electronic Computer student with a passion for programming and technology. 
           I enjoy solving complex problems, building software solutions, and continuously learning 
           new technologies to improve my skills. My goal is to create innovative and efficient 
           applications that make a positive impact.
