@@ -1,12 +1,11 @@
-// filepath: c:\Select Work Portfolio\portfolio-project\src\components\Header.js
 import React from 'react';
 import './Header.css'; 
 
 function Header() {
   return (
-    <header className="header" id='header'>
+    <header className="header" id="header">
       <div className="container header-container">
-      <div className="header-image">
+        <div className="header-image">
           <img src="/petch.jpg" alt="Profile" className="profile-image" />
         </div>
         <div className="header-content">
@@ -15,7 +14,6 @@ function Header() {
             Resume
           </a>
         </div>
-        
       </div>
     </header>
   );
